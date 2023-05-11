@@ -1,0 +1,62 @@
+.logo {
+   margin-top: 5px;
+}
+
+#headerColor{
+    width: 100%;
+    background: #333;
+    padding: 10px ;
+    color: #fff;}
+
+.logo h1 {
+    font-size: 29px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+
+.logo h2 {
+    font-size: 29px;
+    margin: 0;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+    }
+
+.logo h3 {
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
+    }
+
+.logo p {
+    font-size: 10px;
+    margin-top: 23px;
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+.collapse navbar-collapse a{
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.collapse navbar-collapse a:hover{
+    background-color: #ddd;
+}
+
+.collapse navbar-collapse a.active{
+    background-color: aliceblue;
+}

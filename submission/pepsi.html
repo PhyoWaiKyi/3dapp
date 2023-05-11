@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/web3d.css">
+    <link rel="stylesheet" href="css/x3dom.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+
+  <body>
+    <!-- 3D APP header -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <div class="container-fluid">
+        <!-- Brand -->
+          <div class="logo">
+              <a class="navbar-brand" href="assignment.html">
+                <h1 class="letter">Coca</h1>
+                <h1 class="letter">Cola</h1>
+                <h1 class="letter">Jourey</h1>
+              </a>
+          </div>
+  </body>
+  
+  
+  <body id="bodyColor">
+  
+    <!--Collapse Navbar Menu Icon #navbarSupportedContent -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- linking class navbar collapse id selector with navbarSupportedContent(dropdown) -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link active" href="assignment.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"  href="model.html">Models</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  
+  <!--Main Body-->
+  <div class="container-fluid main_contents">
+      <div class="row"> 
+          <div class ="col-sm-12">
+            <div id="left_text_card" >
+                <div class="headerCard">
+                  <ul class="nav nav_tab headerCard_tab">
+                    <li class="nav_item">
+                      <a class="nav_link" href="coke.html">Coke Can</a>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link" href="sprite.html">Sprite</a>
+                    </li>
+                    <li class="nav_item">
+                      <a class="nav_link" href="pepsi.html">Pepsi</a>
+                    </li>
+                  </ul>
+                </div>
+                <div id="3d_image">
+                    <x3d>
+                        <scene>
+                          <Viewpoint id="viewpoint" position="0 0.08 0.2" ></Viewpoint>
+                          <DirectionalLight direction="-1 0 -1"></DirectionalLight>
+                          <Transform rotation = '0 1 0 0'>
+                            <Inline nameSpaceName="model" mapDEFToID="true" onclick="rotateObject();" url=""></Inline>
+                          </Transform>
+                        </scene>
+                      </x3d>
+                    </div><br>
+                    <div class="card-body"> 
+                        <h4 class="card-title">CocaCola X3D Model</h4>
+                        <p class="card-text">This X3D model of the CocaCola was created in Maya, exported to FBX, and then transformed to X3D using Blender for online display.</p>
+                        <a href="#" class="btn btn-primary btn-responsive camera-font" onclick="switchView('front');">Front</a>
+                        <a href="#" class="btn btn-secondary btn-responsive camera-back" onclick="switchView('back');">Back</a>
+                        <a href="#" class="btn btn-danger btn-responsive camera-right" onclick="switchView('right');">Right</a>
+                        <a href="#" class="btn btn-success btn-responsive camera-left" onclick="switchView('left');">Left</a><br>
+                        <a href="#" class="btn btn-success btn-responsive" onclick="stopRotation();">Stop</a>
+                        <a href="#" class="btn btn-secondary btn-responsive" onclick="rotateObject();">Rotate</a>                    
+                    </div>
+                </div>
+            </div> 
+          </div>
+        </div>
+        
+        <div class="col-sm-2"> 
+          <div class="left_text_card">
+              <div class="headerCard">Images</div>
+              <a href="coke.html">
+                  <img class="card-img-top img-fluid img-thumbnail" src="" alt="Coca Cola">
+              </a>
+              <a href="sprite.html">
+                <img class="card-img-top img-fluid img-thumbnail" src="" alt="Sprite">
+              </a>
+              <a href="pepsi.html">
+                  <img class="card-img-top img-fluid img-thumbnail" src="" alt="Pepsi">
+              </a>
+              </div>
+          </div>
+        </div>
+  
+  
+  <!-- Pepsi -->
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid img-thumbnail" src="" alt="Sprite">
+              <div class="card-body">
+                <h3 class="card-title">CocaCola</h3>
+                <p class="card-text">Pepsi was first invented in 1893 as "Brad's Drink" by Caleb Bradham, who sold the drink at his drugstore in New Bern, North Carolina. It was renamed Pepsi-Cola in 1898, "Pepsi" because it was advertised to relieve dyspepsia (indigestion) and "Cola" referring to the cola flavor.</p>    
+                <a href="#" class="btn btn-primary">Find out more ...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  <!--Footer-->
+  <br>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="copyright">
+        <p><span class="align-baseline"></span>&copy 2019 Mobile Web 3D Applications</span></p>
+      </div>
+  
+      <p>Github link:<a href=""></a></p>
+  
+      <div class="navbar-text float-right socail">
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </nav>
+  
+      <!-- JavaScript -->
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/jquery-3.5.1.js"></script>
+      <script src="js/x3dom.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+  </html>
