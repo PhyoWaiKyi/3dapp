@@ -1,7 +1,9 @@
 /* X-Small devices (portrait phones, less than 576px)
    No media query for `xs` since this is the default in Bootstrap
 */
-
+body{
+    background-color: #c67e76;
+}
 .main_contents{
     /*This block element can be visually located on the page by utilising a border. It is advisable to have the ability to toggle the border on and off.*/
     margin-bottom: 10px;
@@ -13,14 +15,9 @@ p{
 }
 /* mobile logo by CSS rule*/
 .logo {
-   margin-top: 5px;
+   margin-top: 100px;
 }
 
-#headerColor{
-    width: 100%;
-    background: #333;
-    padding: 10px ;
-    color: #fff;}
 
 .logo h1 {
     font-family: cocaColaFont;
